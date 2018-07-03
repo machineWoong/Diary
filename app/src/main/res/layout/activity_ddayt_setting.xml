@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.diary.DDaytSetting"
+    android:orientation="vertical"
+    android:id="@+id/DdaySettingView"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="오늘 날짜"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TodayText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="TextView"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 날짜 선택 --------------------------------------------------- "
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"/>
+
+    <CalendarView
+        android:id="@+id/ddayCalender"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="선택 날짜 : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/selectDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:text="Test"
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D Day : "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ddayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:text="0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="제목 : "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ddayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="입력"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:maxLength="20"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/ddaySaveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#55ffffff"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/ddayCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#55ffffff"
+            android:text="취소" />
+    </LinearLayout>
+
+</LinearLayout>

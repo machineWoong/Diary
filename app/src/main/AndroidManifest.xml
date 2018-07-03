@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jeon.diary">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name = "android.hardware.location.gps"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:label="다이어리"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDPw0nEULYy_EDgx-SS52ZmRg0Dnf818Gs" />
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.jeon.diary.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".MainDiary">
+
+            <!-- 메인 다이어리 -->
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiaryList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Diary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intro"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlaramList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".alramSetting"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".BGM" />
+
+        <activity android:name=".list_ListView" />
+        <activity android:name=".Alaram_list_listView" />
+        <activity android:name=".showDiary" />
+
+        <receiver android:name=".AlaramReceiver">
+            <intent-filter>
+                <action android:name="RingTheBell" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".AlaramService"
+            android:enabled="true" />
+
+        <activity android:name=".record_Activity" />
+        <activity android:name=".settingBackground" />
+        <activity android:name=".gameTapTap" />
+        <activity android:name=".oneToGame" />
+        <activity android:name=".DDaytSetting" />
+        <activity android:name=".ddayList" />
+        <activity android:name=".DdayListFormat" />
+        <activity android:name=".LocationList" />
+        <activity android:name=".LocationSet">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".LocationItem"></activity>
+    </application>
+
+</manifest>

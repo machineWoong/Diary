@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink"
+    android:orientation="vertical"
+    tools:context="com.example.jeon.diary.MainDiary"
+    android:id="@+id/mainLinearLayout">
+
+
+    <!-- 다짐 입력받기 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/MyPromise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="나의 다짐"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:maxLength="20"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/gotoList"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/list"
+          />
+
+        <Button
+            android:id="@+id/gotoAlram"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/alarm" />
+
+        <Button
+            android:id="@+id/gotoDDay"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/dday" />
+
+        <Button
+            android:id="@+id/gotoMapList"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/map" />
+
+        <Button
+            android:id="@+id/gotoSetting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/settings" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="할일"
+            android:id="@+id/task1"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/checkbox1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="할일"
+            android:id="@+id/task2"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/checkbox2"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="할일"
+            android:id="@+id/task3"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/checkbox3"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

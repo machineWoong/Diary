@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.diary.DiaryList"
+    android:orientation="vertical"
+    android:background="@drawable/pink"
+    android:id="@+id/DListBg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/yearFilter"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Spinner
+            android:id="@+id/monthFilter"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="0"
+            android:background="@drawable/filter" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Diary_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

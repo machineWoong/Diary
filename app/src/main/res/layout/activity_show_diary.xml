@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pink"
+    android:orientation="vertical"
+    tools:context="com.example.jeon.diary.showDiary"
+    android:id="@+id/ShowDiaryBg"
+    android:gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="날짜"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/showDdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="13"
+            android:text="TextView"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="제목"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/showDtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="13"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/showDimage"
+        android:layout_width="389dp"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:src="@drawable/nophoto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="내용" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="right"
+            android:text="녹음파일" />
+
+        <ImageButton
+            android:id="@+id/startRec"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/start" />
+
+        <ImageButton
+            android:id="@+id/stopRec"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/stop" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/showDcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/showDSave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#55ffffff"
+        android:text="저장" />
+
+
+</LinearLayout>

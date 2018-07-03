@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.diary.setting"
+    android:orientation="vertical"
+    android:background="@drawable/pink"
+    android:id="@+id/SettingLinear">
+
+
+    <Button
+        android:id="@+id/setPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호변경"
+        android:background="#55ffffff"/>
+
+    <Button
+        android:id="@+id/setBackG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="배경테마설정"
+        android:background="#55ffffff"/>
+
+    <Button
+        android:id="@+id/developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="고객센터"
+        android:background="#55ffffff"/>
+
+    <Button
+        android:id="@+id/gotoWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홈페이지이동"
+        android:background="#55ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-------------------------미니게임-------------------------"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/gotoTapGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap Game"
+        android:background="#55ffffff"/>
+
+    <Button
+        android:id="@+id/goto1to25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1to25"
+        android:background="#55ffffff"/>
+
+    <ImageView
+        android:id="@+id/settingAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

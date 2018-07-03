@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.diary.record_Activity"
+    android:background="@drawable/pink"
+    android:id="@+id/RecBg"
+    android:orientation="vertical">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="녹음 시작 / 녹음 정지"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/recBtn"
+            android:layout_width="205dp"
+            android:layout_height="161dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/recbutton" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/recText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/recProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미리 듣기"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/start"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/start" />
+
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/playTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/startSeekBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/recSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#55ffffff"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/recCancle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#55ffffff"
+            android:text="취소" />
+    </LinearLayout>
+
+
+</LinearLayout>

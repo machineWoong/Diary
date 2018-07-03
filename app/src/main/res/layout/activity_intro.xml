@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeon.diary.intro"
+    android:orientation="vertical"
+    android:background="@drawable/pink"
+    android:id="@+id/introBg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/bubble" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Hello Friend"
+        android:textSize="35sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="73dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/introTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="로딩중" />
+
+
+</RelativeLayout>
